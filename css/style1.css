@@ -1,0 +1,40 @@
+html, body{
+    height: 100%;
+}
+
+nav ul{
+    display:flex;
+    flex-direction: row;
+    gap: 64px;
+    list-style-type: none;
+}
+
+.vertical ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style-type: none;
+}
+
+main{
+    background-color: darkslateblue;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pane{
+    display: flex; /* turn on flexbox */
+    flex-direction: row; /* stack items horizontally */
+}
+
+.card{
+    flex: 1; /*shorthand for flex-grow:1, flex-shrink:1; and flex-basis:0; */
+    /* this starts off at 0 width and grows and shrinks to fit space */
+}
+
+.mango{
+    width: 100%; /* sets width to fix the flex container */
+}
